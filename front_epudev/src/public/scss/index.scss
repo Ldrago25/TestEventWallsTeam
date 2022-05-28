@@ -1,0 +1,101 @@
+*,
+*::after,
+*::before{
+  box-sizing: content-box;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.login-header {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.form-login{
+  background-color: rebeccapurple;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  gap: 10px;
+  padding: 3px;
+  &__container-input{
+      margin-top: 10px;
+  }
+  &__label{
+      color: white;
+  }
+  &__input-input{
+      border: none;
+      width: 200px;
+  }
+  &__input-passoword{
+      border:none;
+      width: 200px;
+  }
+  &__load{
+      width: 250px;
+      margin: auto;
+  }
+}
+
+.form-Register{
+    background-color: rebeccapurple;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    gap: 10px;
+    padding: 3px;
+    &__container-input{
+        margin-top: 10px;
+    }
+    &__label{
+        color: white;
+    }
+    &__input-input{
+        border: none;
+        width: 200px;
+    }
+    &__input-passoword{
+        border:none;
+        width: 200px;
+    }
+    &__load{
+        width: 250px;
+        margin: auto;
+    }
+  }
+  .modal-contenido{
+    background-color:aqua;
+    width:400px;
+    margin: auto;
+    position: relative;
+    max-height: 500px;
+    overflow-y: auto;
+    padding: 10px;
+  }
+  .modal{
+    background-color: rgba(0,0,0,.8);
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:0;
+    pointer-events:none;
+    transition: all 1s;
+    display: grid;
+    place-items: center;
+  }
+  .modal_active{
+    opacity:1;
+    pointer-events:auto;
+  }
+  .datos{
+      display: none;
+  }
+  
+  .isActive_datos{
+      display: block;
+  }
